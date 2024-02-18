@@ -10,3 +10,10 @@ Examples:
   let arr = ["BBC1", "BBC1", "BBC2", "MTV"];
   redarr(arr) // returns {"0":"BBC1", "1":"BBC2", "2":"MTV"}
 */
+
+
+// Solution
+
+function redarr(arr) {
+  return Object.assign({}, Array.from(new Set(arr)).sort());
+}
