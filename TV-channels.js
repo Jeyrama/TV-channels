@@ -19,3 +19,17 @@ function redarr(arr) {
 }
 
 // or
+
+function redarr(arr) {
+
+	let ar = arr.slice().sort(),
+        obj = {},
+        count = 0;
+        
+	for (let i = 0; i < ar.length; i++) {
+		if (ar[i] === ar[i-1]) continue;
+		obj[count] = ar[i];	
+		count++;
+	}
+	return obj;
+}
