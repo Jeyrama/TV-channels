@@ -17,3 +17,5 @@ Examples:
 function redarr(arr) {
   return Object.assign({}, Array.from(new Set(arr)).sort());
 }
+
+// or
